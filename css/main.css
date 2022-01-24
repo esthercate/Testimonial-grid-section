@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #ecf2f8;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 13px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.grid-container {
+  max-width: 350px;
+  padding: 1rem;
+  margin: 0 1rem;
+}
+
+@media (min-width: 700px) {
+  .grid-container {
+    max-width: 1100px;
+    margin-top: 3rem;
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: 'item1 item2 item5' 'item3 item4 item5';
+  }
+}
+
+.item {
+  margin: .5rem;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: .5rem;
+}
+
+.header img {
+  border-radius: 50%;
+  width: 60%;
+}
+
+.header .name {
+  margin: auto auto auto 0;
+}
+
+.main h2 {
+  margin-bottom: 1rem;
+}
+
+.grid-item1 .name,
+.grid-item2 .name,
+.grid-item4 .name {
+  color: #cfcfcf;
+}
+
+.grid-item1 .name h4,
+.grid-item2 .name h4,
+.grid-item4 .name h4 {
+  opacity: 50%;
+}
+
+.grid-item1 .main,
+.grid-item2 .main,
+.grid-item4 .main {
+  color: #cfcfcf;
+}
+
+.grid-item1 .main p,
+.grid-item2 .main p,
+.grid-item4 .main p {
+  opacity: 70%;
+}
+
+.grid-item3 .name,
+.grid-item5 .name {
+  color: #48556a;
+}
+
+.grid-item3 .name h4,
+.grid-item5 .name h4 {
+  opacity: 50%;
+}
+
+.grid-item3 .main,
+.grid-item5 .main {
+  color: #48556a;
+}
+
+.grid-item3 .main p,
+.grid-item5 .main p {
+  opacity: 70%;
+}
+
+.grid-item1 {
+  background-color: #7541c8;
+  background-image: url("../images/bg-pattern-quotation.svg");
+  background-repeat: no-repeat;
+  background-position: 90% 0;
+  background-size: 30% 23%;
+}
+
+@media (min-width: 700px) {
+  .grid-item1 {
+    grid-area: item1;
+    grid-column: span 4;
+    background-position: 80% 0;
+    background-size: 20% 37%;
+  }
+}
+
+.grid-item2 {
+  background: #48556a;
+}
+
+@media (min-width: 700px) {
+  .grid-item2 {
+    grid-area: item2;
+    grid-column: span 1;
+  }
+}
+
+.grid-item3 {
+  background: white;
+}
+
+@media (min-width: 700px) {
+  .grid-item3 {
+    grid-area: item3;
+    grid-column: span 1;
+  }
+}
+
+.grid-item4 {
+  background: #19212e;
+}
+
+@media (min-width: 700px) {
+  .grid-item4 {
+    grid-area: item4;
+    grid-column: span 4;
+  }
+}
+
+.grid-item5 {
+  background: white;
+}
+
+@media (min-width: 700px) {
+  .grid-item5 {
+    grid-area: item5;
+    grid-column: span 1;
+  }
+}
+/*# sourceMappingURL=main.css.map */
